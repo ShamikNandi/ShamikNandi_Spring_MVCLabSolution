@@ -70,8 +70,9 @@ public class StudentController {
 
 			theStudent.setDepartment(department);
 			theStudent.setCountry(country);
-		} else
+		} else {
 			theStudent = new Student(name, department, country);
+		}
 		// save the Book
 		studentService.save(theStudent);
 
